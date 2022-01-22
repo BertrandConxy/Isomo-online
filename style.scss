@@ -1,3 +1,232 @@
-h1 {
-    color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400;1,500&display=swap');
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+$darkRed: #a70000;
+$lightRed: #f6787a;
+$lightColor: #777;
+$lightWhite: #eee;
+$black: #444;
+$white: #fff;
+$border: .1rem solid $darkRed;
+$box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 2rem;
+};
+
+@mixin titleText($titleSize) {
+    font-size: $titleSize;
+    text-transform: capitalize;
+    color: $black;
+}
+
+@mixin  graphText($graphSize) {
+    font-size: $graphSize;
+    text-transform: capitalize;
+    color: $black;
+    line-height: 2;
+    color: $lightColor;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $darkRed;
+    }
+}
+
+// heading section
+
+header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: $white;
+    box-shadow: $box-shadow;
+    padding: .1rem 6%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    .logo {
+        margin-right: auto;
+        width: 27%;    
+    }
+
+    .navbar {
+        position: relative;
+        #close-nav {
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            font-size: 4rem;
+            cursor: pointer;
+            color: $black;
+            display: none;
+
+            &.transform {
+                transform: rotate(90deg);
+            }
+        }
+        a {
+            margin-right: 2rem;
+            @include titleText(2.3rem)
+    
+            
+        }
+    
+        .navbar a:hover {
+            color: $darkRed;
+        }
+    }
+
+    .icons div {
+        cursor: pointer;
+        font-size: 2.9rem;
+        margin-left: 2rem;
+        color: $black;
+
+        &:hover{
+            color: $darkRed;
+        }
+    }
+
+    #menu-btn {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// media queries
+
+@media only screen and (max-width: 1200px) {
+    .header {
+        padding: .9rem 5%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    html {
+        font-size: 56%;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        #menu-btn {
+            display: inline-block;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            right: -111%;
+            width: 30rem;
+            background: $white;
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+
+            &.active {
+                right: 0;
+                box-shadow: 0 0 0 100vw rgba(0,0,0,.8);
+            }
+
+            a{
+                display: block;
+                margin: 1rem 0;
+                text-align: center;
+                font-size: 3rem;
+            }
+
+            #close-nav {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
 }
