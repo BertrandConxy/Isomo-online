@@ -91,11 +91,9 @@ header {
         a {
             margin-right: 2rem;
             @include titleText(2.3rem)
-    
-            
         }
     
-        .navbar a:hover {
+         a:hover {
             color: $darkRed;
         }
     }
@@ -116,6 +114,16 @@ header {
     }
 }
 
+// Account form
+
+.account-form {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 35rem;
+    display: flex;
+    flex-flow: column;
+}
 
 
 
@@ -205,6 +213,7 @@ header {
             display: flex;
             flex-flow: column;
             justify-content: center;
+            z-index: 1200;
 
             &.active {
                 right: 0;

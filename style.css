@@ -79,7 +79,7 @@ header .navbar a {
   color: #444;
 }
 
-header .navbar .navbar a:hover {
+header .navbar a:hover {
   color: #a70000;
 }
 
@@ -96,6 +96,20 @@ header .icons div:hover {
 
 header #menu-btn {
   display: none;
+}
+
+.account-form {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -131,6 +145,7 @@ header #menu-btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    z-index: 1200;
   }
   .header .navbar.active {
     right: 0;
