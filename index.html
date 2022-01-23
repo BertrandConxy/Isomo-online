@@ -25,13 +25,15 @@
     </header>
 
     <!-- Account Form section starts-->
+    
     <div class="account-form">
+        <div id="close-form" class="fas fa-times"></div>
         <div class="buttons">
-            <span class="btn log-in-btn">log in</span>
+            <span class="btn active log-in-btn">log in</span>
             <span class="btn register-btn">register</span>
         </div>
 
-        <form class="login-form" action="">
+        <form class="login-form active" action="">
             <h3>log in form</h3>
             <input type="email" name="email" id="email" class="box" placeholder="Enter your email">
             <input type="password" name="email" id="email" class="box" placeholder="Enter your password">
@@ -40,7 +42,16 @@
                 <label for="remember-me">remember me</label>
                 <a href="#">forgot password?</a>
             </div>
-            <input type="submit" value="login now" class="btn">
+            <input type="submit" value="log in now" class=" login-btn">
+        </form>
+
+        <form class="register-form" action="">
+            <h3>Register form</h3>
+            <input type="email" name="email" id="email" class="box" placeholder="Enter your email">
+            <input type="password" name="password" id="password" class="box" placeholder="Enter your password">
+            <input type="password" name="password" id="password-confirm" class="box" placeholder="confirm your password">
+
+            <input type="submit" value="register now" class=" login-btn">
         </form>
     </div>
     

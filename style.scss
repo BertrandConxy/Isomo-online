@@ -56,7 +56,28 @@ html {
 }
 
 // heading section
+.btn {
+    display: flex; 
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    border: $border;
+    background: $white;
+    color: $darkRed;
+    cursor: pointer;
+    text-transform: capitalize;
 
+    &.active {
+        background: $darkRed;
+        color: $white;
+    }
+
+    &:hover {
+        background: $darkRed;
+        color: $white;
+    }
+}
 header {
     position: sticky;
     top: 0;
@@ -119,10 +140,105 @@ header {
 .account-form {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -120%;
     width: 35rem;
     display: flex;
     flex-flow: column;
+    gap: 2rem;
+    background: $white;
+    justify-content: center;
+    height: 100%;
+    
+    z-index: 1200;
+    padding: 2rem;
+    align-items: center;
+
+    &.active-form {
+        right: 0;
+        box-shadow: 0 0 0 100vw rgba(0,0,0,.8);
+    }
+
+    .buttons {
+        display: flex;
+    }
+
+    #close-form {
+        position: absolute;
+        top: 1.5rem;
+        right: 2rem;
+        font-size: 4rem;
+        cursor: pointer;
+        color: $black;
+
+        &.transform {
+            transform: rotate(90deg);
+        }
+    }
+
+    form {
+        border: $border;
+        padding: 2rem;
+        text-align: center;
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        .login-btn {    
+            margin-top: 1rem;
+            padding: 1rem 3rem;
+            font-size: 1.8rem;
+            border: $border;
+            background: $white;
+            color: $darkRed;
+            text-transform: uppercase;
+            cursor: pointer;
+            width: 100%;
+
+            &:hover {
+                background: $darkRed;
+                color: $white;
+            }
+        }
+
+        h3 {
+            @include titleText(2.5rem);
+            text-transform: uppercase;
+            padding-bottom: .5rem;
+            
+        }
+
+        .box {
+            padding: 1.2rem 1.4rem;
+            border: $border;
+            font-size: 1.6rem;
+            margin: .7rem 0;
+        }
+
+        .flex {
+            padding: 1rem 0;
+            display: flex;
+            align-items: center;
+
+            label {
+                font-size: 1.5rem;
+                color: $lightColor;
+                cursor: pointer;
+            }
+
+            a {
+                font-size: 1.5rem;
+                color: $lightColor;
+                margin-left: auto;
+                
+                &:hover {
+                    text-decoration: underline;
+                    color: $darkRed;
+                }
+            }
+        }
+    }
 }
 
 
