@@ -54,6 +54,25 @@ html::-webkit-scrollbar-thumb {
   color: #fff;
 }
 
+.logo {
+  margin-right: auto;
+}
+
+.logo img {
+  width: 23%;
+  height: 2%;
+}
+
+.section-pad {
+  padding: 5rem 10%;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -71,11 +90,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
   z-index: 1000;
-}
-
-header .logo {
-  margin-right: auto;
-  width: 27%;
 }
 
 header .navbar {
@@ -244,15 +258,111 @@ header #menu-btn {
   color: #a70000;
 }
 
+footer {
+  background-color: rgba(253, 194, 194, 0.466);
+}
+
+footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+footer .box-container .box h3 {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  color: #444;
+  padding: 1rem 0;
+}
+
+footer .box-container img {
+  width: 40%;
+  height: auto;
+}
+
+footer .box-container .link {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  color: #444;
+  line-height: 2;
+  color: #777;
+  padding: .5rem 0;
+  display: block;
+}
+
+footer .box-container .link:hover {
+  color: #a70000;
+  text-decoration: underline;
+}
+
+footer .box-container .share {
+  margin-top: 1rem;
+}
+
+footer .box-container .share a {
+  height: 4rem;
+  border-radius: 15px;
+  width: 4rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  background-color: #a70000;
+  color: #fff;
+  margin-right: .2rem;
+  text-align: center;
+}
+
+footer .box-container .share a:hover {
+  background-color: #777;
+}
+
+footer .box-container p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #444;
+  line-height: 2;
+  color: #777;
+  padding: 1rem 0;
+}
+
+footer .box-container #email-footer {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  border: 0.1rem solid #a70000;
+  margin-bottom: 1rem;
+}
+
+footer .credit {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #444;
+  border-top: 0.1rem solid #a70000;
+}
+
+footer .credit span {
+  color: #a70000;
+}
+
 @media only screen and (max-width: 1200px) {
   .header {
     padding: .9rem 5%;
+  }
+  .section-pad {
+    padding: 3rem 5%;
   }
 }
 
 @media only screen and (max-width: 992px) {
   html {
     font-size: 56%;
+  }
+  .section-pad {
+    padding: 3rem 2rem;
   }
 }
 

@@ -10,7 +10,7 @@
     transition: all .2s linear;
 }
 $darkRed: #a70000;
-$lightRed: #f6787a;
+$lightRed: rgba(253, 194, 194, 0.466);
 $lightColor: #777;
 $lightWhite: #eee;
 $black: #444;
@@ -78,6 +78,24 @@ html {
         color: $white;
     }
 }
+
+.logo  {
+    margin-right: auto;
+    
+}
+
+.logo img {
+    width: 23%;
+    height: 2%;
+}
+
+.section-pad {
+    padding: 5rem 10%;
+}
+
+.icons {
+    display: flex;
+}
 header {
     position: sticky;
     top: 0;
@@ -89,10 +107,7 @@ header {
     display: flex;
     align-items: center;
     z-index: 1000;
-    .logo {
-        margin-right: auto;
-        width: 27%;    
-    }
+
 
     .navbar {
         position: relative;
@@ -241,6 +256,83 @@ header {
     }
 }
 
+footer {
+    background-color: $lightRed;
+   .box-container {
+
+    @include grid(25rem);
+    .box {
+        h3 {
+            @include titleText(2.2rem);
+            padding: 1rem 0;
+        }
+    }
+    
+    img {
+        width: 40%;
+        height: auto
+    }
+
+    .link {
+        @include graphText(1.7rem);
+        padding: .5rem 0;
+        display: block;
+
+        &:hover {
+            color: $darkRed;
+            text-decoration: underline;
+        }
+    }
+
+    .share {
+        margin-top: 1rem;
+
+        a {
+            height: 4rem;
+            border-radius: 15px;
+            width: 4rem;
+            line-height: 4.5rem;
+            font-size: 1.7rem;
+            background-color: $darkRed;
+            color: $white;
+            margin-right: .2rem;
+            text-align: center;
+
+            &:hover {
+                background-color: $lightColor;
+            }
+        }
+    }
+
+    p {
+        @include graphText(1.5rem);
+        padding: 1rem 0;
+    }
+
+    #email-footer {
+        width: 100%;
+        padding: 1.2rem 1.4rem;
+        font-size: 1.6rem;
+        border: $border;
+        margin-bottom: 1rem;
+    }
+    
+
+   }
+
+   .credit {
+       margin-top: 3rem;
+       padding-top: 3rem;
+       text-align: center;
+       @include titleText(2rem);
+       border-top: $border;
+
+       span {
+           color: $darkRed;
+       }
+   }
+}
+
 
 
 
@@ -304,12 +396,19 @@ header {
     .header {
         padding: .9rem 5%;
     }
+
+    .section-pad {
+        padding: 3rem 5%;
+    }
 }
 
 @media only screen and (max-width: 992px) {
     html {
         font-size: 56%;
+    }
 
+    .section-pad {
+        padding: 3rem 2rem;
     }
 }
 
