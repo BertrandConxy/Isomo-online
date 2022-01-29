@@ -7,6 +7,10 @@
     <title>Isomo online homepage</title>
 </head>
 <link rel="stylesheet" href="style.css">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 <body>
     <header class="header">
@@ -59,7 +63,41 @@
 <main>
 <!-- Home section starts -->
 <section class="home">
-    
+    <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+            <div class=" swiper-slide slide slide-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h3>The best courses you will find here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis provident ex
+                         aspernatur sed quas deserunt distinctio, dolorum hic ducimus quam.</p>
+                     <a href="#" class="btn">get started</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide slide-2">
+                <div class="overlay"></div>
+                <div class="content ">
+                    <h3>The best courses you will find here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis provident ex
+                         aspernatur sed quas deserunt distinctio, dolorum hic ducimus quam.</p>
+                     <a href="#" class="btn">get started</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide slide-3">
+                <div class="overlay"></div>
+                <div class="content ">
+                    <h3>The best courses you will find here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis provident ex
+                         aspernatur sed quas deserunt distinctio, dolorum hic ducimus quam.</p>
+                     <a href="#" class="btn">get started</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
 </section>
 <!-- Home section ends -->
 
@@ -155,6 +193,7 @@
         </div>
         <div class="credit">Created by <span>Bertrand</span> | all rights reserved</div>
     </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>

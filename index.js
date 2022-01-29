@@ -46,4 +46,15 @@ loginBtn.addEventListener('click', ()=>{
     document.querySelector('.login-form').classList.add('active')
     document.querySelector('.register-form').classList.remove('active')
 
-})
+});
+
+// photo slides
+
+const swiper = new Swiper(".home-slider", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    loop: true,
+    grabCursor: true,
+  });
