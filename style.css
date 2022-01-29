@@ -357,6 +357,10 @@ footer .credit span {
   color: #a70000;
 }
 
+.home {
+  padding: .5rem 0;
+}
+
 .home .slide {
   position: relative;
   display: -webkit-box;
@@ -454,6 +458,10 @@ footer .credit span {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.subjects {
+  padding: 3rem 1rem;
+}
+
 .subjects .subject-img {
   width: 70%;
   height: 100%;
@@ -487,6 +495,84 @@ footer .credit span {
   color: #444;
   line-height: 2;
   color: #777;
+}
+
+.home-courses {
+  padding: 3rem 1rem;
+}
+
+.home-courses .slide {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  background: rgba(253, 194, 194, 0.466);
+  padding: 1rem 1rem;
+  margin-left: 2rem;
+  overflow: hidden;
+}
+
+.home-courses .slide:hover .content {
+  bottom: 0;
+}
+
+.home-courses .slide .image {
+  padding: 2rem;
+}
+
+.home-courses .slide .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+  margin-bottom: 1.5rem;
+}
+
+.home-courses .slide .image #science {
+  width: 68%;
+}
+
+.home-courses .slide .image h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #444;
+}
+
+.home-courses .slide .content {
+  position: absolute;
+  bottom: -200%;
+  right: 0;
+  left: 0;
+  background-color: #777;
+  padding: 2rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-courses .slide .content h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #444;
+  color: #fff;
+}
+
+.home-courses .slide .content p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #444;
+  line-height: 2;
+  color: #777;
+  color: #eee;
 }
 
 @media only screen and (max-width: 1200px) {

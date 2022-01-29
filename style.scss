@@ -342,7 +342,7 @@ footer {
 // home-section
 
 .home {
-    
+    padding: .5rem 0;
     .slide {
         position: relative;
         display: flex;
@@ -417,6 +417,7 @@ footer {
 // Subjects section
 
 .subjects {
+    padding: 3rem 1rem;
     .subject-img {
         width: 70%;
         height: 100%;
@@ -437,6 +438,64 @@ footer {
         }
         p {
             @include graphText(1.5rem);
+        }
+    }
+}
+
+// courses section
+.home-courses {
+    padding: 3rem 1rem;
+    .slide {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        background: $lightRed;
+        padding: 1rem 1rem;
+        margin-left: 2rem;
+        overflow: hidden;
+
+        &:hover .content {
+            bottom: 0;
+        }
+        
+        .image {
+            padding: 2rem;
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 7px;
+                margin-bottom: 1.5rem;
+            }
+            #science {
+                width: 68%;
+            }
+            h3 {
+                @include titleText(2rem);
+            }
+        }
+        
+        .content {
+            position: absolute;
+            bottom: -200%; right: 0; left: 0;
+            background-color: $lightColor;
+            padding: 2rem 3rem;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+
+            h3 {
+                @include titleText(2rem);
+                color: $white;
+            }
+
+            p {
+                padding: 1rem 0;
+                @include graphText(1.5rem);
+                color: $lightWhite;
+            }
+
+           
         }
     }
 }

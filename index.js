@@ -58,3 +58,26 @@ const swiper = new Swiper(".home-slider", {
     loop: true,
     grabCursor: true,
   });
+
+  var swiper2 = new Swiper(".home-courses-slider", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    loop: true,
+    grabCursor: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+    },
+  });
+  
