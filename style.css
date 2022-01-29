@@ -29,6 +29,14 @@ html::-webkit-scrollbar-thumb {
   background: #a70000;
 }
 
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  color: #444;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,6 +454,41 @@ footer .credit span {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.subjects .subject-img {
+  width: 70%;
+  height: 100%;
+}
+
+.subjects .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+  padding: 0 3rem;
+}
+
+.subjects .box {
+  padding: 2rem 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.subjects .box h3 {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  color: #444;
+}
+
+.subjects .box p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #444;
+  line-height: 2;
+  color: #777;
+}
+
 @media only screen and (max-width: 1200px) {
   .header {
     padding: .9rem 5%;
@@ -512,6 +555,9 @@ footer .credit span {
 @media only screen and (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .heading {
+    font-size: 3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

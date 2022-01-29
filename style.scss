@@ -56,6 +56,11 @@ html {
 }
 
 // heading section
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    @include titleText( 3.5rem);
+}
 .btn {
     display: flex; 
     margin-top: 1rem;
@@ -409,6 +414,33 @@ footer {
     }
 }
 
+// Subjects section
+
+.subjects {
+    .subject-img {
+        width: 70%;
+        height: 100%;
+    }
+
+    .box-container{
+        @include grid(15rem);
+        margin-bottom: 4rem;
+        padding: 0 3rem;
+    }
+    .box {
+        padding: 2rem 2rem;
+        text-align: center;
+        cursor: pointer;
+
+        h3 {
+            @include titleText(1.7rem);
+        }
+        p {
+            @include graphText(1.5rem);
+        }
+    }
+}
+
 
 
 
@@ -535,5 +567,9 @@ footer {
 @media only screen and (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+
+    .heading {
+        font-size: 3rem;
     }
 }
