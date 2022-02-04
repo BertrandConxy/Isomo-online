@@ -608,8 +608,74 @@ footer {
       }
     }
   }
+
 }
 
+.teachers {
+
+  .slide {
+    text-align: center;
+    width: 30rem;
+    height: auto;
+
+    &:hover{
+      .image {
+        img {
+          background-color: $darkRed;
+        }
+
+        .share {
+          bottom: 0;
+        }
+      }
+    }
+    .image {
+      position: relative;
+      overflow: hidden;
+
+      img {
+        background-color: $lightRed;
+        width: 100%;
+      }
+
+      .share {
+        position: absolute;
+        bottom: -10rem;
+        right: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 2rem;
+
+        a {
+          font-size: 3rem;
+          margin: 0 1rem;
+          color: $white;
+
+          &:hover{
+            color:$lightColor;
+          }
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-flow: column;
+      padding-top: 1rem;
+      align-items: center;
+      justify-content: space-around;
+
+      h3 {
+        @include titleText(2rem);
+
+      }
+
+      span {
+        @include graphText(1.5rem);
+      }
+    }
+  }
+}
 
 
 
