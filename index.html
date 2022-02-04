@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isomo online homepage</title>
+    <link rel="stylesheet" href="style.css">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="./images/isomo-logo.png" class="logo" alt="isomo logo"></a>
+        <nav class="navbar">
+            <div id="close-nav" class="fas fa-times"></div>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="contact.html">Contacts</a>
+        </nav>
+        <div class="icons">
+            <div id="account-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+
+    <!-- Account Form section starts-->
+    
+    <div class="account-form">
+        <div id="close-form" class="fas fa-times"></div>
+        <div class="buttons">
+            <span class="btn active log-in-btn">log in</span>
+            <span class="btn register-btn">register</span>
+        </div>
+
+        <form class="login-form active">
+            <h3>log in form</h3>
+            <input type="email" name="email" id="email" class="box" placeholder="Enter your email">
+            <input type="password" name="password" id="password" class="box" placeholder="Enter your password">
+            <div class="flex">
+                <input type="checkbox" name="remember" id="remember-me">
+                <label for="remember-me">remember me</label>
+                <a href="#">forgot password?</a>
+            </div>
+            <input type="submit" value="log in now" class=" login-btn">
+        </form>
+
+        <form class="register-form">
+            <h3>Register form</h3>
+            <input type="email" name="email" id="email-reg" class="box" placeholder="Enter your email">
+            <input type="password" name="password" id="password-reg" class="box" placeholder="Enter your password">
+            <input type="password" name="password" id="password-confirm" class="box" placeholder="confirm your password">
+
+            <input type="submit" value="register now" class=" login-btn">
+        </form>
+    </div>
+    
+    <!-- Account Form section ends-->
+<main>
+<!-- Home section starts -->
+<section class="home">
+    <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+            <div class=" swiper-slide slide slide-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h3>The best courses you will find here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis provident ex
+                         aspernatur sed quas deserunt distinctio, dolorum hic ducimus quam.</p>
+                     <a href="#" class="btn">get started</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide slide-2">
+                <div class="overlay"></div>
+                <div class="content ">
+                    <h3>The best courses you will find here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis provident ex
+                         aspernatur sed quas deserunt distinctio, dolorum hic ducimus quam.</p>
+                     <a href="#" class="btn">get started</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide slide-3">
+                <div class="overlay"></div>
+                <div class="content ">
+                    <h3>The best courses you will find here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis provident ex
+                         aspernatur sed quas deserunt distinctio, dolorum hic ducimus quam.</p>
+                     <a href="#" class="btn">get started</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+</section>
+<!-- Home section ends -->
+<!-- Subjects sections starts -->
+<section class="subjects">
+    <h2 class="heading">our popular subjects</h2>
+    <div class="box-container">
+        <div class="box">
+            <img src="./images/svgs/pair-programing-ilu.svg" alt="digital design illustrator" class="subject-img">
+            <h3>Digital design</h3>
+            <p>12 modules</p>
+        </div>
+        <div class="box">
+            <img src="./images/svgs/web-design-ilu.svg" alt="web development illustrator" class="subject-img">
+            <h3>Web design</h3>
+            <p>12 modules</p>
+        </div>
+        <div class="box">
+            <img src="./images/svgs/language-ilu.svg" alt="languages illustrator" class="subject-img">
+            <h3>Languages</h3>
+            <p>12 modules</p>
+        </div>
+        <div class="box">
+            <img src="./images/svgs/Driving-ilu.svg" alt="Driving illustrator" class="subject-img">
+            <h3>Driving rules</h3>
+            <p>5 modules</p>
+        </div>
+        <div class="box">
+            <img src="./images/svgs/lessons-ilu.svg" alt="books illustrator" class="subject-img">
+            <h3>N.E preparation</h3>
+            <p>8 modules</p>
+        </div>
+        <div class="box">
+            <img src="./images/svgs/lessons-ilu.svg" alt="books illustrator" class="subject-img">
+            <h3>N.E preparation</h3>
+            <p>8 modules</p>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- subjects sections ends -->
+<!-- home course slider starts -->
+<section class="home-courses">
+    <h2 class="heading">our popular courses</h2>
+    <div class="swiper home-courses-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="./images/web-development.jpg" alt="">
+                    <h3>web development</h3>
+                </div>
+                <div class="content">
+                    <h3>web development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, deserunt.</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="./images/anatomy-subject.jpg" alt="">
+                    <h3>Anatomy</h3>
+                </div>
+                <div class="content">
+                    <h3>Anatommy</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, deserunt.</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="./images/language-course.jpg" alt="">
+                    <h3>English course</h3>
+                </div>
+                <div class="content">
+                    <h3>English</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, deserunt.</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="./images/science-course.jpg" alt="" id='science'>
+                    <h3>Sciences</h3>
+                </div>
+                <div class="content">
+                    <h3>Sciences</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, deserunt.</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="./images/content-creation.jpg" alt="">
+                    <h3>Content creation</h3>
+                </div>
+                <div class="content">
+                    <h3>Content creation</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, deserunt.</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- home courses slider ends -->
+</main>
+
+    <!-- Footer section -->
+    <footer class="section-pad">
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="logo"><img src="./images/isomo-logo.png" class="logo" alt="isomo logo"></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, velit?</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin-in"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="home.html" class="link">Home</a>
+                <a href="about.html" class="link">About</a>
+                <a href="courses.html" class="link">Courses</a>
+                <a href="contact.html" class="link">Contacts</a>
+            </div>
+
+            <div class="box">
+                <h3>useful links</h3>
+                <a href="#" class="link">help center</a>
+                <a href="#" class="link">ask questions</a>
+                <a href="#" class="link">send feedback</a>
+                <a href="#" class="link">private policy</a>
+                <a href="#" class="link">terms of use</a>
+            </div>
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <form >
+                    <input type="email" name="email" id="email-footer" placeholder="enter your e-mail">
+                    <input type="submit" value="subscribe" class="buttons btn">
+                </form>
+            </div>
+        </div>
+        <div class="credit">Created by <span>Bertrand</span> | all rights reserved</div>
+    </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,652 @@
+/* stylelint-disable-line  csstree/validator, no-descending-specificity */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400;1,500&display=swap");
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #a70000;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  color: #444;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  border: 0.1rem solid #a70000;
+  background: #fff;
+  color: #a70000;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.btn.active {
+  background: #a70000;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #a70000;
+  color: #fff;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo img {
+  width: 17%;
+  height: 2%;
+}
+
+.section-pad {
+  padding: 5rem 10%;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 0.1rem 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+header .navbar {
+  position: relative;
+}
+
+header .navbar #close-nav {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: #444;
+  display: none;
+}
+
+header .navbar #close-nav.transform {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+header .navbar a {
+  margin-right: 2rem;
+  font-size: 2.3rem;
+  text-transform: capitalize;
+  color: #444;
+}
+
+header .navbar a:hover {
+  color: #a70000;
+}
+
+header .icons div {
+  cursor: pointer;
+  font-size: 2.9rem;
+  margin-left: 2rem;
+  color: #444;
+}
+
+header .icons div:hover {
+  color: #a70000;
+}
+
+header #menu-btn {
+  display: none;
+}
+
+.account-form {
+  position: fixed;
+  top: 0;
+  right: -120%;
+  width: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  gap: 2rem;
+  background: #fff;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  z-index: 1200;
+  padding: 2rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.account-form.active-form {
+  right: 0;
+  -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+}
+
+.account-form .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.account-form #close-form {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: #444;
+}
+
+.account-form #close-form.transform {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.account-form form {
+  border: 0.1rem solid #a70000;
+  padding: 2rem;
+  text-align: center;
+  display: none;
+}
+
+.account-form form.active {
+  display: block;
+}
+
+.account-form form .login-btn {
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  border: 0.1rem solid #a70000;
+  background: #fff;
+  color: #a70000;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+}
+
+.account-form form .login-btn:hover {
+  background: #a70000;
+  color: #fff;
+}
+
+.account-form form h3 {
+  font-size: 2.5rem;
+  color: #444;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+
+.account-form form .box {
+  padding: 1.2rem 1.4rem;
+  border: 0.1rem solid #a70000;
+  font-size: 1.6rem;
+  margin: 0.7rem 0;
+}
+
+.account-form form .flex {
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.account-form form .flex label {
+  font-size: 1.5rem;
+  color: #777;
+  cursor: pointer;
+}
+
+.account-form form .flex a {
+  font-size: 1.5rem;
+  color: #777;
+  margin-left: auto;
+}
+
+.account-form form .flex a:hover {
+  text-decoration: underline;
+  color: #a70000;
+}
+
+footer {
+  background-color: rgba(253, 194, 194, 0.466);
+}
+
+footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+footer .box-container .box h3 {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  color: #444;
+  padding: 1rem 0;
+}
+
+footer .box-container img {
+  width: 40%;
+  height: auto;
+}
+
+footer .box-container .link {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  line-height: 2;
+  color: #777;
+  padding: 0.5rem 0;
+  display: block;
+}
+
+footer .box-container .link:hover {
+  color: #a70000;
+  text-decoration: underline;
+}
+
+footer .box-container .share {
+  margin-top: 1rem;
+}
+
+footer .box-container .share a {
+  height: 4rem;
+  border-radius: 15px;
+  width: 4rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  background-color: #a70000;
+  color: #fff;
+  margin-right: 0.2rem;
+  text-align: center;
+}
+
+footer .box-container .share a:hover {
+  background-color: #777;
+}
+
+footer .box-container p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  line-height: 2;
+  color: #777;
+  padding: 1rem 0;
+}
+
+footer .box-container #email-footer {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  border: 0.1rem solid #a70000;
+  margin-bottom: 1rem;
+}
+
+footer .credit {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #444;
+  border-top: 0.1rem solid #a70000;
+}
+
+footer .credit span {
+  color: #a70000;
+}
+
+.home {
+  padding: 0.5rem 0;
+}
+
+.home .slide {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 58rem;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.home .slide .content {
+  z-index: 11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 60rem;
+  padding: 1rem;
+}
+
+.home .slide .content h3 {
+  font-size: 6rem;
+  text-transform: capitalize;
+  color: #444;
+  color: #fff;
+}
+
+.home .slide .content p {
+  font-size: 2rem;
+  text-transform: capitalize;
+  line-height: 2;
+  color: #777;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.home .slide-1 {
+  background: url("./images/man-comp-2.jpg") no-repeat;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.home .slide-1 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.home .slide-2 {
+  background: url("./images/woman-comp-2.jpg") no-repeat;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.home .slide-2 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.home .slide-3 {
+  background: url("./images/child-phone-2.jpg") no-repeat;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.home .slide-3 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.subjects {
+  padding: 3rem 1rem;
+}
+
+.subjects .subject-img {
+  width: 70%;
+  height: 100%;
+}
+
+.subjects .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+  padding: 0 3rem;
+}
+
+.subjects .box {
+  padding: 2rem 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.subjects .box h3 {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  color: #444;
+}
+
+.subjects .box p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  line-height: 2;
+  color: #777;
+}
+
+.home-courses {
+  padding: 3rem 1rem;
+}
+
+.home-courses .slide {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  background: rgba(253, 194, 194, 0.466);
+  padding: 1rem 1rem;
+  margin-left: 2rem;
+  overflow: hidden;
+}
+
+.home-courses .slide:hover .content {
+  bottom: 0;
+}
+
+.home-courses .slide .image {
+  padding: 2rem;
+}
+
+.home-courses .slide .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+  margin-bottom: 1.5rem;
+}
+
+.home-courses .slide .image #science {
+  width: 68%;
+}
+
+.home-courses .slide .image h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #444;
+}
+
+.home-courses .slide .content {
+  position: absolute;
+  bottom: -200%;
+  right: 0;
+  left: 0;
+  background-color: #777;
+  padding: 2rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.home-courses .slide .content h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #444;
+  color: #fff;
+}
+
+.home-courses .slide .content p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  line-height: 2;
+  color: #777;
+  color: #eee;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header {
+    padding: 0.9rem 5%;
+  }
+
+  .section-pad {
+    padding: 3rem 5%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 56%;
+  }
+
+  .section-pad {
+    padding: 3rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: fixed;
+    top: 0;
+    right: -111%;
+    width: 30rem;
+    background: #fff;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 1200;
+  }
+
+  .header .navbar.active {
+    right: 0;
+    -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+  }
+
+  .header .navbar a {
+    display: block;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .header .navbar #close-nav {
+    display: inline-block;
+  }
+
+  .home .slide .content h3 {
+    font-size: 3rem;
+  }
+
+  .home .slide .content p {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+}
