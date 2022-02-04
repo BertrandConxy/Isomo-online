@@ -523,6 +523,148 @@ footer {
   }
 }
 
+// About styles
+.heading-link {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  background-color: $lightRed;
+  height: 30vh;
+  h3 {
+    @include titleText(4rem);
+
+  }
+
+  p {
+    @include graphText(2rem);
+
+    a {
+      color: $darkRed;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  .images {
+    flex: 1 1 40rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .content {
+    flex: 1 1 60rem;
+    padding: 0 10rem;
+    img {
+      height: 9rem;
+      width: 100%;
+      margin-bottom: .5rem;
+    }
+
+    .about-title {
+      @include titleText(3rem);
+    }
+
+    p {
+      @include graphText(2rem);
+      padding: 1rem 0;
+    }
+
+    .icon-container {
+      margin: 2rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      .icons {
+        flex: 1 1 12rem;
+        text-align: center;
+        flex-flow: column;
+        border: $border;
+        border-radius: 20px;
+        align-items: center;
+        padding: 1.5rem 2rem ;
+
+        h3 {
+          @include titleText(3rem);
+        }
+
+        span {
+          @include graphText(2rem);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // media queries
 
 @media only screen and (max-width: 1200px) {
