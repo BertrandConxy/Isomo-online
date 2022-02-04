@@ -1,15 +1,17 @@
+/* stylelint-disable-next-line csstree/validator */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400;1,500&display=swap");
+
 * {
   font-family: 'Nunito', sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none;
   border: none;
   text-decoration: none;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 html {
@@ -38,7 +40,6 @@ html::-webkit-scrollbar-thumb {
 }
 
 .btn {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 1rem;
@@ -76,13 +77,11 @@ html::-webkit-scrollbar-thumb {
 }
 
 .icons {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 header {
-  z-index: 13;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -90,14 +89,13 @@ header {
   left: 0;
   background: #fff;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  padding: .1rem 6%;
-  display: -webkit-box;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 0.1rem 6%;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   z-index: 1000;
 }
 
@@ -117,7 +115,7 @@ header .navbar #close-nav {
 
 header .navbar #close-nav.transform {
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 header .navbar a {
@@ -151,34 +149,32 @@ header #menu-btn {
   top: 0;
   right: -120%;
   width: 35rem;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   gap: 2rem;
   background: #fff;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 100%;
   z-index: 1200;
   padding: 2rem;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .account-form.active-form {
   right: 0;
   -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
-          box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
 }
 
 .account-form .buttons {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
@@ -194,7 +190,7 @@ header #menu-btn {
 
 .account-form #close-form.transform {
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .account-form form {
@@ -227,27 +223,25 @@ header #menu-btn {
 
 .account-form form h3 {
   font-size: 2.5rem;
-  text-transform: capitalize;
   color: #444;
   text-transform: uppercase;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 .account-form form .box {
   padding: 1.2rem 1.4rem;
   border: 0.1rem solid #a70000;
   font-size: 1.6rem;
-  margin: .7rem 0;
+  margin: 0.7rem 0;
 }
 
 .account-form form .flex {
   padding: 1rem 0;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .account-form form .flex label {
@@ -274,8 +268,8 @@ footer {
 footer .box-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2rem;
 }
 
@@ -294,10 +288,9 @@ footer .box-container img {
 footer .box-container .link {
   font-size: 1.7rem;
   text-transform: capitalize;
-  color: #444;
   line-height: 2;
   color: #777;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   display: block;
 }
 
@@ -318,7 +311,7 @@ footer .box-container .share a {
   font-size: 1.7rem;
   background-color: #a70000;
   color: #fff;
-  margin-right: .2rem;
+  margin-right: 0.2rem;
   text-align: center;
 }
 
@@ -329,7 +322,6 @@ footer .box-container .share a:hover {
 footer .box-container p {
   font-size: 1.5rem;
   text-transform: capitalize;
-  color: #444;
   line-height: 2;
   color: #777;
   padding: 1rem 0;
@@ -358,17 +350,16 @@ footer .credit span {
 }
 
 .home {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
 .home .slide {
   position: relative;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 58rem;
   background-size: cover !important;
   background-position: center !important;
@@ -376,19 +367,18 @@ footer .credit span {
 
 .home .slide .content {
   z-index: 11;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 60rem;
   padding: 1rem;
 }
@@ -403,7 +393,6 @@ footer .credit span {
 .home .slide .content p {
   font-size: 2rem;
   text-transform: capitalize;
-  color: #444;
   line-height: 2;
   color: #777;
   color: #fff;
@@ -413,8 +402,8 @@ footer .credit span {
 .home .slide-1 {
   background: url("./images/man-comp-2.jpg") no-repeat;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .home .slide-1 .overlay {
@@ -429,8 +418,8 @@ footer .credit span {
 .home .slide-2 {
   background: url("./images/woman-comp-2.jpg") no-repeat;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .home .slide-2 .overlay {
@@ -445,8 +434,8 @@ footer .credit span {
 .home .slide-3 {
   background: url("./images/child-phone-2.jpg") no-repeat;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .home .slide-3 .overlay {
@@ -470,8 +459,8 @@ footer .credit span {
 .subjects .box-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  -ms-grid-columns: (minmax(15rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 2rem;
   margin-bottom: 4rem;
   padding: 0 3rem;
@@ -492,7 +481,6 @@ footer .credit span {
 .subjects .box p {
   font-size: 1.5rem;
   text-transform: capitalize;
-  color: #444;
   line-height: 2;
   color: #777;
 }
@@ -543,19 +531,18 @@ footer .credit span {
   left: 0;
   background-color: #777;
   padding: 2rem 3rem;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .home-courses .slide .content h3 {
@@ -569,7 +556,6 @@ footer .credit span {
   padding: 1rem 0;
   font-size: 1.5rem;
   text-transform: capitalize;
-  color: #444;
   line-height: 2;
   color: #777;
   color: #eee;
@@ -577,8 +563,9 @@ footer .credit span {
 
 @media only screen and (max-width: 1200px) {
   .header {
-    padding: .9rem 5%;
+    padding: 0.9rem 5%;
   }
+
   .section-pad {
     padding: 3rem 5%;
   }
@@ -588,6 +575,7 @@ footer .credit span {
   html {
     font-size: 56%;
   }
+
   .section-pad {
     padding: 3rem 2rem;
   }
@@ -597,6 +585,7 @@ footer .credit span {
   .header #menu-btn {
     display: inline-block;
   }
+
   .header .navbar {
     position: fixed;
     top: 0;
@@ -604,35 +593,39 @@ footer .credit span {
     width: 30rem;
     background: #fff;
     height: 100%;
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     z-index: 1200;
   }
+
   .header .navbar.active {
     right: 0;
     -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
-            box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
   }
+
   .header .navbar a {
     display: block;
     margin: 1rem 0;
     text-align: center;
     font-size: 3rem;
   }
+
   .header .navbar #close-nav {
     display: inline-block;
   }
+
   .home .slide .content h3 {
     font-size: 3rem;
   }
+
   .home .slide .content p {
     font-size: 1.4rem;
   }
@@ -642,8 +635,8 @@ footer .credit span {
   html {
     font-size: 50%;
   }
+
   .heading {
     font-size: 3rem;
   }
 }
-/*# sourceMappingURL=style.css.map */
