@@ -772,6 +772,20 @@ footer .credit span {
   color: #777;
 }
 
+.reviews .slide {
+  text-align: center;
+}
+
+.reviews .slide p {
+  font-size: 2rem;
+  text-transform: capitalize;
+  line-height: 2;
+  color: #777;
+  position: relative;
+  background-color: rgba(253, 194, 194, 0.466);
+  border: 0.1rem solid #a70000;
+}
+
 @media only screen and (max-width: 1200px) {
   .header {
     padding: 0.9rem 5%;

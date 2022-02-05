@@ -677,6 +677,17 @@ footer {
   }
 }
 
+.reviews {
+  .slide {
+     text-align: center;
+     p {
+       @include graphText(2rem);
+       position: relative;
+       background-color: $lightRed;
+       border: $border;
+     }
+  }
+}
 
 
 
