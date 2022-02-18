@@ -720,6 +720,94 @@ footer {
     }
   }
 }
+// Courses page styles
+.courses {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .load-more {
+    width: 25%;
+    text-align: center;
+  }
+  .box-container {
+    @include grid(40rem)
+  }
+  .box {
+    .image {
+      position: relative;
+      overflow: hidden;
+    }
+
+    &:hover .image img {
+      transform: scale(1.1);
+    }
+    &.hide {
+      display: none;
+    }
+    h3 {
+      position: absolute;
+      @include titleText(1.5rem);
+      top: 1rem;
+      left: 1rem;
+      padding: .5rem 1.5rem;
+      background: $white;
+    }
+    border: 1px solid $lightRed;
+    .content {
+      padding: 2rem;
+      text-align: center;
+      
+
+      h3 {
+        @include titleText(2rem);
+      }
+
+      p {
+        padding: 1rem 0;
+        @include graphText(1.6rem);
+
+      }
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 2rem;
+      padding-top: 2rem;
+      
+
+      span {
+        @include titleText(1.8rem);
+
+        i {
+          
+          padding: 2rem;
+        }
+      }
+    } 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // media queries
 
