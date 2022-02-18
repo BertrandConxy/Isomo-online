@@ -523,6 +523,204 @@ footer {
   }
 }
 
+// About styles
+.heading-link {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  background-color: $lightRed;
+  height: 30vh;
+
+  h3 {
+    @include titleText(4rem);
+  }
+
+  p {
+    @include graphText(2rem);
+
+    a {
+      color: $darkRed;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  .images {
+    flex: 1 1 40rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .content {
+    flex: 1 1 60rem;
+    padding: 0 10rem;
+
+    img {
+      height: 9rem;
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+
+    .about-title {
+      @include titleText(3rem);
+    }
+
+    p {
+      @include graphText(2rem);
+
+      padding: 1rem 0;
+    }
+
+    .icon-container {
+      margin: 2rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      .icons {
+        flex: 1 1 12rem;
+        text-align: center;
+        flex-flow: column;
+        border: $border;
+        border-radius: 20px;
+        align-items: center;
+        padding: 1.5rem 2rem;
+
+        h3 {
+          @include titleText(3rem);
+        }
+
+        span {
+          @include graphText(2rem);
+        }
+      }
+    }
+  }
+}
+
+.teachers {
+  .slide {
+    text-align: center;
+    width: 30rem;
+    height: auto;
+
+    &:hover {
+      .image {
+        img {
+          background-color: $darkRed;
+        }
+
+        .share {
+          bottom: 0;
+        }
+      }
+    }
+
+    .image {
+      position: relative;
+      overflow: hidden;
+
+      img {
+        background-color: $lightRed;
+        width: 100%;
+      }
+
+      .share {
+        position: absolute;
+        bottom: -10rem;
+        right: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 2rem;
+
+        a {
+          font-size: 3rem;
+          margin: 0 1rem;
+          color: $white;
+
+          &:hover {
+            color: $lightColor;
+          }
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-flow: column;
+      padding-top: 1rem;
+      align-items: center;
+      justify-content: space-around;
+
+      h3 {
+        @include titleText(2rem);
+      }
+
+      span {
+        @include graphText(1.5rem);
+      }
+    }
+  }
+}
+
+.reviews {
+  .slide {
+    text-align: center;
+
+    img {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+    }
+
+    p {
+      @include graphText(1.7rem);
+
+      position: relative;
+      background-color: $lightRed;
+      border: $border;
+      margin-bottom: 3rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -1.1rem;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        background-color: $lightRed;
+        border-bottom: $border;
+        border-right: $border;
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+
+    h3 {
+      @include titleText(2.4rem);
+
+      padding: 0.5rem 0;
+    }
+
+    .stars {
+      font-size: 1.5rem;
+    }
+  }
+}
+
 // media queries
 
 @media only screen and (max-width: 1200px) {

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isomo online about page</title>
+    <link rel="stylesheet" href="style.css">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="./images/isomo-logo.png" class="logo" alt="isomo logo"></a>
+        <nav class="navbar">
+            <div id="close-nav" class="fas fa-times"></div>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="contact.html">Contacts</a>
+        </nav>
+        <div class="icons">
+            <div id="account-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+
+    <!-- Account Form section starts-->
+    
+    <div class="account-form">
+        <div id="close-form" class="fas fa-times"></div>
+        <div class="buttons">
+            <span class="btn active log-in-btn">log in</span>
+            <span class="btn register-btn">register</span>
+        </div>
+
+        <form class="login-form active">
+            <h3>log in form</h3>
+            <input type="email" name="email" id="email" class="box" placeholder="Enter your email">
+            <input type="password" name="password" id="password" class="box" placeholder="Enter your password">
+            <div class="flex">
+                <input type="checkbox" name="remember" id="remember-me">
+                <label for="remember-me">remember me</label>
+                <a href="#">forgot password?</a>
+            </div>
+            <input type="submit" value="log in now" class=" login-btn">
+        </form>
+
+        <form class="register-form">
+            <h3>Register form</h3>
+            <input type="email" name="email" id="email-reg" class="box" placeholder="Enter your email">
+            <input type="password" name="password" id="password-reg" class="box" placeholder="Enter your password">
+            <input type="password" name="password" id="password-confirm" class="box" placeholder="confirm your password">
+
+            <input type="submit" value="register now" class=" login-btn">
+        </form>
+    </div>
+    
+    <!-- Account Form section ends-->
+    <main>
+        <section class="heading-link">
+            <h3>About us</h3>
+            <p><a href="index.html">Home</a>/About</p>
+        </section>
+
+        <section class="about">
+            <div class="images">
+                <img src="./images/isomo-logo.png" alt="Isomo logo" class="img-about">
+            </div>
+
+            <div class="content">
+                <h3 class="about-title">We have the best courses for you</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Possimus doloribus suscipit ullam facilis beatae perspiciatis, quibusdam id dignissimos cum sit esse,
+                      amet, saepe adipisci iste accusamus dicta est impedit consequuntur quos? Soluta, temporibus iusto
+                       inventore provident quia perspiciatis nam! Dolore?
+                    </p>
+
+                    <div class="icon-container">
+                        <div class="icons">
+                            <img src="./images/svgs/lessons-ilu.svg" alt="" class="about-img-icon">
+                            <h3>750+</h3>
+                            <span>courses</span>
+
+                        </div>
+                        <div class="icons">
+                            <img src="./images/svgs/award-ilu.png" alt="" class="about-img-icon">
+                            <h3>20+</h3>
+                            <span>awards</span>
+
+                        </div>
+                        <div class="icons">
+                            <img src="./images/svgs/student-ilu.png" alt="" class="about-img-icon">
+                            <h3>1000+</h3>
+                            <span>students</span>
+
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="teachers">
+            <h1 class="heading">Expert teachers</h1>
+            <div class=" swiper teachers-slider">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="./images/teacher-1.png" alt="first teacher">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin-in"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Martina Ab</h3>
+                        <span>expert languages tutor!</span>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="./images/teacher-2.png" alt="first teacher">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin-in"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Diane vee</h3>
+                        <span>expert tutor in science courses!</span>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="./images/teacher-3.png" alt="first teacher">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin-in"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Tracy An</h3>
+                        <span>expert tutor in photography and designs!</span>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="./images/teacher-4.png" alt="first teacher">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin-in"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>John Deo</h3>
+                        <span>expert tutor in Anatomy!</span>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="./images/teacher-5.png" alt="first teacher">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin-in"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Kevine Ways</h3>
+                        <span>expert tutor in content creation and digital marketing!</span>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="./images/teacher-5.png" alt="first teacher">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin-in"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Kevine Ways</h3>
+                        <span>expert tutor in Driving</span>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="./images/teacher-1.png" alt="first teacher">
+                        <div class="share">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin-in"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Martina Ab</h3>
+                        <span>expert tutor in software development</span>
+                    </div>
+                </div>
+            </div>
+         </div>
+        </section>
+<!-- Students reviews -->
+        <section class="reviews">
+            <h1 class="heading">Our students reviews</h1>
+            <div class=" swiper students-reviews">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                             Perferendis ducimus accusamus numquam velit cumque harum eum autem eos modi quaerat?
+                        </p>
+                        <img src="./images/aggy.jpg" alt="first student review">
+                        <h3>Agnes</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                             Perferendis ducimus accusamus numquam velit cumque harum eum autem eos modi quaerat?
+                        </p>
+                        <img src="./images/odillo.jpg" alt="first student review">
+                        <h3>Odillo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                             Perferendis ducimus accusamus numquam velit cumque harum eum autem eos modi quaerat?
+                        </p>
+                        <img src="./images/darlene.webp" alt="first student review">
+                        <h3>Darlene</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                             Perferendis ducimus accusamus numquam velit cumque harum eum autem eos modi quaerat?
+                        </p>
+                        <img src="./images/bertrand.jpg" alt="first student review">
+                        <h3>Bertrand</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                             Perferendis ducimus accusamus numquam velit cumque harum eum autem eos modi quaerat?
+                        </p>
+                        <img src="./images/sauve.webp" alt="first student review">
+                        <h3>Sauve</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                             Perferendis ducimus accusamus numquam velit cumque harum eum autem eos modi quaerat?
+                        </p>
+                        <img src="./images/aggy.jpg" alt="first student review">
+                        <h3>Kevine</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Students reviews section ends -->
+    </main>
+     <!-- Footer section -->
+     <footer class="section-pad">
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="logo"><img src="./images/isomo-logo.png" class="logo" alt="isomo logo"></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, velit?</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin-in"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="home.html" class="link">Home</a>
+                <a href="about.html" class="link">About</a>
+                <a href="courses.html" class="link">Courses</a>
+                <a href="contact.html" class="link">Contacts</a>
+            </div>
+
+            <div class="box">
+                <h3>useful links</h3>
+                <a href="#" class="link">help center</a>
+                <a href="#" class="link">ask questions</a>
+                <a href="#" class="link">send feedback</a>
+                <a href="#" class="link">private policy</a>
+                <a href="#" class="link">terms of use</a>
+            </div>
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <form >
+                    <input type="email" name="email" id="email-footer" placeholder="enter your e-mail">
+                    <input type="submit" value="subscribe" class="buttons btn">
+                </form>
+            </div>
+        </div>
+        <div class="credit">Created by <span>Bertrand</span> | all rights reserved</div>
+    </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
