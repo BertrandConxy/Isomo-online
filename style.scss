@@ -532,9 +532,9 @@ footer {
   align-items: center;
   background-color: $lightRed;
   height: 30vh;
+
   h3 {
     @include titleText(4rem);
-
   }
 
   p {
@@ -568,10 +568,11 @@ footer {
   .content {
     flex: 1 1 60rem;
     padding: 0 10rem;
+
     img {
       height: 9rem;
       width: 100%;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
 
     .about-title {
@@ -580,6 +581,7 @@ footer {
 
     p {
       @include graphText(2rem);
+
       padding: 1rem 0;
     }
 
@@ -596,7 +598,7 @@ footer {
         border: $border;
         border-radius: 20px;
         align-items: center;
-        padding: 1.5rem 2rem ;
+        padding: 1.5rem 2rem;
 
         h3 {
           @include titleText(3rem);
@@ -608,17 +610,15 @@ footer {
       }
     }
   }
-
 }
 
 .teachers {
-
   .slide {
     text-align: center;
     width: 30rem;
     height: auto;
 
-    &:hover{
+    &:hover {
       .image {
         img {
           background-color: $darkRed;
@@ -629,6 +629,7 @@ footer {
         }
       }
     }
+
     .image {
       position: relative;
       overflow: hidden;
@@ -651,8 +652,8 @@ footer {
           margin: 0 1rem;
           color: $white;
 
-          &:hover{
-            color:$lightColor;
+          &:hover {
+            color: $lightColor;
           }
         }
       }
@@ -667,7 +668,6 @@ footer {
 
       h3 {
         @include titleText(2rem);
-
       }
 
       span {
@@ -679,68 +679,47 @@ footer {
 
 .reviews {
   .slide {
-     text-align: center;
-     p {
-       @include graphText(2rem);
-       position: relative;
-       background-color: $lightRed;
-       border: $border;
-     }
+    text-align: center;
+
+    img {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+    }
+
+    p {
+      @include graphText(1.7rem);
+
+      position: relative;
+      background-color: $lightRed;
+      border: $border;
+      margin-bottom: 3rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -1.1rem;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        background-color: $lightRed;
+        border-bottom: $border;
+        border-right: $border;
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+
+    h3 {
+      @include titleText(2.4rem);
+
+      padding: 0.5rem 0;
+    }
+
+    .stars {
+      font-size: 1.5rem;
+    }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // media queries
 

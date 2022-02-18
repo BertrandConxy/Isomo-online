@@ -1,11 +1,12 @@
 /* stylelint-disable-line  csstree/validator, no-descending-specificity */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400;1,500&display=swap");
+
 * {
   font-family: 'Nunito', sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none;
   border: none;
   text-decoration: none;
@@ -90,14 +91,14 @@ header {
   left: 0;
   background: #fff;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   padding: 0.1rem 6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   z-index: 1000;
 }
 
@@ -117,7 +118,7 @@ header .navbar #close-nav {
 
 header .navbar #close-nav.transform {
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 header .navbar a {
@@ -156,25 +157,25 @@ header #menu-btn {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   gap: 2rem;
   background: #fff;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 100%;
   z-index: 1200;
   padding: 2rem;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .account-form.active-form {
   right: 0;
   -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
-          box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
 }
 
 .account-form .buttons {
@@ -194,7 +195,7 @@ header #menu-btn {
 
 .account-form #close-form.transform {
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .account-form form {
@@ -227,7 +228,6 @@ header #menu-btn {
 
 .account-form form h3 {
   font-size: 2.5rem;
-  text-transform: capitalize;
   color: #444;
   text-transform: uppercase;
   padding-bottom: 0.5rem;
@@ -246,8 +246,8 @@ header #menu-btn {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .account-form form .flex label {
@@ -274,8 +274,8 @@ footer {
 footer .box-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2rem;
 }
 
@@ -365,8 +365,8 @@ footer .credit span {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 58rem;
   background-size: cover !important;
   background-position: center !important;
@@ -379,14 +379,14 @@ footer .credit span {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 60rem;
   padding: 1rem;
 }
@@ -410,8 +410,8 @@ footer .credit span {
 .home .slide-1 {
   background: url("./images/man-comp-2.jpg") no-repeat;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .home .slide-1 .overlay {
@@ -426,8 +426,8 @@ footer .credit span {
 .home .slide-2 {
   background: url("./images/woman-comp-2.jpg") no-repeat;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .home .slide-2 .overlay {
@@ -442,8 +442,8 @@ footer .credit span {
 .home .slide-3 {
   background: url("./images/child-phone-2.jpg") no-repeat;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .home .slide-3 .overlay {
@@ -467,8 +467,8 @@ footer .credit span {
 .subjects .box-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  -ms-grid-columns: (minmax(15rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 2rem;
   margin-bottom: 4rem;
   padding: 0 3rem;
@@ -544,14 +544,14 @@ footer .credit span {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .home-courses .slide .content h3 {
@@ -576,15 +576,15 @@ footer .credit span {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: rgba(253, 194, 194, 0.466);
   height: 30vh;
 }
@@ -615,18 +615,18 @@ footer .credit span {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 2rem 0;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 3rem;
 }
 
 .about .images {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
 }
 
 .about .images img {
@@ -635,15 +635,15 @@ footer .credit span {
 
 .about .content {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 60rem;
-          flex: 1 1 60rem;
+  -ms-flex: 1 1 60rem;
+  flex: 1 1 60rem;
   padding: 0 10rem;
 }
 
 .about .content img {
   height: 9rem;
   width: 100%;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .about .content .about-title {
@@ -666,24 +666,24 @@ footer .credit span {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
 .about .content .icon-container .icons {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 12rem;
-          flex: 1 1 12rem;
+  -ms-flex: 1 1 12rem;
+  flex: 1 1 12rem;
   text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   border: 0.1rem solid #a70000;
   border-radius: 20px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 1.5rem 2rem;
 }
 
@@ -749,14 +749,14 @@ footer .credit span {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   padding-top: 1rem;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .teachers .slide .content h3 {
@@ -776,20 +776,53 @@ footer .credit span {
   text-align: center;
 }
 
+.reviews .slide img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
 .reviews .slide p {
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-transform: capitalize;
   line-height: 2;
   color: #777;
   position: relative;
   background-color: rgba(253, 194, 194, 0.466);
   border: 0.1rem solid #a70000;
+  margin-bottom: 3rem;
+}
+
+.reviews .slide p::before {
+  content: '';
+  position: absolute;
+  bottom: -1.1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+  background-color: rgba(253, 194, 194, 0.466);
+  border-bottom: 0.1rem solid #a70000;
+  border-right: 0.1rem solid #a70000;
+  height: 2rem;
+  width: 2rem;
+}
+
+.reviews .slide h3 {
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  color: #444;
+  padding: 0.5rem 0;
+}
+
+.reviews .slide .stars {
+  font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 1200px) {
   .header {
     padding: 0.9rem 5%;
   }
+
   .section-pad {
     padding: 3rem 5%;
   }
@@ -799,6 +832,7 @@ footer .credit span {
   html {
     font-size: 56%;
   }
+
   .section-pad {
     padding: 3rem 2rem;
   }
@@ -808,6 +842,7 @@ footer .credit span {
   .header #menu-btn {
     display: inline-block;
   }
+
   .header .navbar {
     position: fixed;
     top: 0;
@@ -820,30 +855,35 @@ footer .credit span {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     z-index: 1200;
   }
+
   .header .navbar.active {
     right: 0;
     -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
-            box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
   }
+
   .header .navbar a {
     display: block;
     margin: 1rem 0;
     text-align: center;
     font-size: 3rem;
   }
+
   .header .navbar #close-nav {
     display: inline-block;
   }
+
   .home .slide .content h3 {
     font-size: 3rem;
   }
+
   .home .slide .content p {
     font-size: 1.4rem;
   }
@@ -853,8 +893,8 @@ footer .credit span {
   html {
     font-size: 50%;
   }
+
   .heading {
     font-size: 3rem;
   }
 }
-/*# sourceMappingURL=style.css.map */
