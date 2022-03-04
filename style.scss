@@ -67,7 +67,6 @@ html {
 .btn {
   display: flex;
   margin-top: 1rem;
-  margin-left: 1rem;
   padding: 1rem 3rem;
   font-size: 1.8rem;
   border: $border;
@@ -140,6 +139,14 @@ header {
     }
 
     a:hover {
+      color: $darkRed;
+    }
+
+    a:active {
+      color: $darkRed;
+    }
+
+    a:enabled {
       color: $darkRed;
     }
   }
@@ -790,6 +797,87 @@ footer {
   }
 }
 
+//  contact page styles
+
+.contacts {
+  .icons-container{
+    @include grid(25rem);
+    margin: 2rem;
+    margin-bottom: 5rem;
+
+    .icons {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 5rem 2rem;
+      border: $border;
+      background: $lightRed;
+     
+
+      i{
+        height: 6rem;
+        width: 6rem;
+        line-height: 6rem;
+        font-size: 2rem;
+        border-radius: 50%;
+        margin-bottom: 4rem;
+        color: $white;
+        background-color: $darkRed;
+      }
+
+      h3 {
+        @include titleText(2rem);
+      }
+      p {
+        @include graphText(1.5rem);
+      }
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 2rem;
+    text-align: center;
+
+    .image {
+      flex: 1 1 40rem;
+    img {
+      width: 100%;
+    }
+    }
+
+    form {
+      flex: 1 1 20rem ;
+      display: flex;
+      flex-flow: column;
+      gap: 2rem;
+
+      h3 {
+        @include titleText(2.5rem);
+        padding-bottom: 1rem;
+      }
+      .box {
+        width: 100%;
+        padding: 1.2rem 1.4rem;
+        font-size: 1.6rem;
+        border: $border;
+
+        &:focus {
+          background-color: $lightRed;
+          color: $lightColor;
+        }
+      }
+      .sub {
+        max-width:fit-content;
+      }
+    }
+
+  }
+}
 
 
 

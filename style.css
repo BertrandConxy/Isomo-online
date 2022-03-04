@@ -43,7 +43,6 @@ html::-webkit-scrollbar-thumb {
   display: -ms-flexbox;
   display: flex;
   margin-top: 1rem;
-  margin-left: 1rem;
   padding: 1rem 3rem;
   font-size: 1.8rem;
   border: 0.1rem solid #a70000;
@@ -128,6 +127,14 @@ header .navbar a {
 }
 
 header .navbar a:hover {
+  color: #a70000;
+}
+
+header .navbar a:active {
+  color: #a70000;
+}
+
+header .navbar a:enabled {
   color: #a70000;
 }
 
@@ -907,6 +914,120 @@ footer .credit span {
 
 .courses .box .icons span i {
   padding: 2rem;
+}
+
+.contacts .icons-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+  margin: 2rem;
+  margin-bottom: 5rem;
+}
+
+.contacts .icons-container .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 5rem 2rem;
+  border: 0.1rem solid #a70000;
+  background: rgba(253, 194, 194, 0.466);
+}
+
+.contacts .icons-container .icons i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  margin-bottom: 4rem;
+  color: #fff;
+  background-color: #a70000;
+}
+
+.contacts .icons-container .icons h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #444;
+}
+
+.contacts .icons-container .icons p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  line-height: 2;
+  color: #777;
+}
+
+.contacts .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.contacts .row .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.contacts .row .image img {
+  width: 100%;
+}
+
+.contacts .row form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  gap: 2rem;
+}
+
+.contacts .row form h3 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: #444;
+  padding-bottom: 1rem;
+}
+
+.contacts .row form .box {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  border: 0.1rem solid #a70000;
+}
+
+.contacts .row form .box:focus {
+  background-color: rgba(253, 194, 194, 0.466);
+  color: #777;
+}
+
+.contacts .row form .sub {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 @media only screen and (max-width: 1200px) {
