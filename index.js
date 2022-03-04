@@ -123,21 +123,41 @@ const swiper4 = new Swiper('.students-reviews', {
   },
 });
 
-const loadBtn = document.querySelector('.btn');
-loadBtn.addEventListener('click', ()=> {
-  document.querySelectorAll('.courses .box-container .hide').forEach(show => {
-    show.style.display = 'block';
-  })
-  document.querySelector('.load-more .btn').style.display = 'none';
+const swiper5 = new Swiper('.logo-slider', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  loop: true,
+  grabCursor: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 5,
+    },
+  },
 });
 
+const loadBtn = document.querySelector('.btn');
+loadBtn.addEventListener('click', () => {
+  document.querySelectorAll('.courses .box-container .hide').forEach((show) => {
+    show.style.display = 'block';
+  });
+  document.querySelector('.load-more .btn').style.display = 'none';
+});
 
 // accordions
 
 const accordions = document.querySelectorAll('.accordion');
-accordions.forEach((accordion) =>{
-  accordion.addEventListener('click', ()=>{
+accordions.forEach((accordion) => {
+  accordion.addEventListener('click', () => {
     accordion.classList.toggle('active');
-  })
-})
-
+  });
+});

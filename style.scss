@@ -64,6 +64,12 @@ html {
   @include titleText( 3.5rem);
 }
 
+.nav-link {
+  &:hover {
+    color: aqua;
+  }
+}
+
 .btn {
   display: flex;
   margin-top: 1rem;
@@ -138,15 +144,7 @@ header {
       @include titleText(2.3rem);
     }
 
-    a:hover {
-      color: $darkRed;
-    }
-
-    a:active {
-      color: $darkRed;
-    }
-
-    a:enabled {
+    .nav-link:hover {
       color: $darkRed;
     }
   }
@@ -733,13 +731,16 @@ footer {
     width: 100%;
     object-fit: cover;
   }
+
   .load-more {
     width: 25%;
     text-align: center;
   }
+
   .box-container {
-    @include grid(40rem)
+    @include grid(40rem);
   }
+
   .box {
     .image {
       position: relative;
@@ -749,22 +750,27 @@ footer {
     &:hover .image img {
       transform: scale(1.1);
     }
+
     &.hide {
       display: none;
     }
+
     h3 {
       position: absolute;
+
       @include titleText(1.5rem);
+
       top: 1rem;
       left: 1rem;
-      padding: .5rem 1.5rem;
+      padding: 0.5rem 1.5rem;
       background: $white;
     }
+
     border: 1px solid $lightRed;
+
     .content {
       padding: 2rem;
       text-align: center;
-      
 
       h3 {
         @include titleText(2rem);
@@ -772,8 +778,8 @@ footer {
 
       p {
         padding: 1rem 0;
-        @include graphText(1.6rem);
 
+        @include graphText(1.6rem);
       }
     }
 
@@ -783,25 +789,24 @@ footer {
       justify-content: space-between;
       margin-top: 2rem;
       padding-top: 2rem;
-      
 
       span {
         @include titleText(1.8rem);
 
         i {
-          
           padding: 2rem;
         }
       }
-    } 
+    }
   }
 }
 
 //  contact page styles
 
 .contacts {
-  .icons-container{
+  .icons-container {
     @include grid(25rem);
+
     margin: 2rem;
     margin-bottom: 5rem;
 
@@ -814,9 +819,8 @@ footer {
       padding: 5rem 2rem;
       border: $border;
       background: $lightRed;
-     
 
-      i{
+      i {
         height: 6rem;
         width: 6rem;
         line-height: 6rem;
@@ -830,6 +834,7 @@ footer {
       h3 {
         @include titleText(2rem);
       }
+
       p {
         @include graphText(1.5rem);
       }
@@ -845,21 +850,24 @@ footer {
 
     .image {
       flex: 1 1 40rem;
-    img {
-      width: 100%;
-    }
+
+      img {
+        width: 100%;
+      }
     }
 
     form {
-      flex: 1 1 20rem ;
+      flex: 1 1 20rem;
       display: flex;
       flex-flow: column;
       gap: 2rem;
 
       h3 {
         @include titleText(2.5rem);
+
         padding-bottom: 1rem;
       }
+
       .box {
         width: 100%;
         padding: 1.2rem 1.4rem;
@@ -871,86 +879,84 @@ footer {
           color: $lightColor;
         }
       }
+
       .sub {
-        max-width:fit-content;
+        max-width: fit-content;
       }
     }
-
   }
 }
 
- .faq {
-    .accordion-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      align-items: flex-start;
+.faq {
+  margin: 3rem 0;
 
-      .accordion {
-        flex: 1 1 40rem;
-        border: $border;
+  .accordion-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
 
-        &.active {
-          .accordion-heading {
-            background-color: $darkRed;
-          }
+    .accordion {
+      flex: 1 1 40rem;
+      border: $border;
 
-          .accordion-content {
-            display: block;
-          }
-
-          h3 {
-            color: $white;
-          }
-
-          i {
-            color: $white;
-            transform: rotate(180deg);
-          }
+      &.active {
+        .accordion-heading {
+          background-color: $darkRed;
         }
-      }
 
-      .accordion-heading {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        gap: 1rem;
-        cursor: pointer;
+        .accordion-content {
+          display: block;
+        }
 
         h3 {
-          @include titleText(2rem);
+          color: $white;
         }
 
         i {
-          font-size: 3rem;
-          color: $darkRed;
+          color: $white;
+          transform: rotate(180deg);
         }
       }
     }
 
-    .accordion-content {
-      @include graphText(1.5rem);
-      border-top: $border;
-      display: none;
+    .accordion-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+      gap: 1rem;
+      cursor: pointer;
+
+      h3 {
+        @include titleText(2rem);
+      }
+
+      i {
+        font-size: 3rem;
+        color: $darkRed;
+      }
     }
   }
 
+  .accordion-content {
+    @include graphText(1.5rem);
 
+    border-top: $border;
+    display: none;
+  }
+}
 
+.logo-container {
+  text-align: center;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .slide {
+    img {
+      height: 10rem;
+      pointer-events: none;
+    }
+  }
+}
 
 // media queries
 
