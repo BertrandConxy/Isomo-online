@@ -879,6 +879,61 @@ footer {
   }
 }
 
+ .faq {
+    .accordion-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+
+      .accordion {
+        flex: 1 1 40rem;
+        border: $border;
+
+        &.active {
+          .accordion-heading {
+            background-color: $darkRed;
+          }
+
+          .accordion-content {
+            display: block;
+          }
+
+          h3 {
+            color: $white;
+          }
+
+          i {
+            color: $white;
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .accordion-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+        cursor: pointer;
+
+        h3 {
+          @include titleText(2rem);
+        }
+
+        i {
+          font-size: 3rem;
+          color: $darkRed;
+        }
+      }
+    }
+
+    .accordion-content {
+      @include graphText(1.5rem);
+      border-top: $border;
+      display: none;
+    }
+  }
 
 
 

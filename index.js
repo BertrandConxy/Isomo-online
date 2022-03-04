@@ -123,10 +123,21 @@ const swiper4 = new Swiper('.students-reviews', {
   },
 });
 
-const loadBtn = document.querySelector('.load-more .btn');
+const loadBtn = document.querySelector('.btn');
 loadBtn.addEventListener('click', ()=> {
   document.querySelectorAll('.courses .box-container .hide').forEach(show => {
     show.style.display = 'block';
   })
   document.querySelector('.load-more .btn').style.display = 'none';
+});
+
+
+// accordions
+
+const accordions = document.querySelectorAll('.accordion');
+accordions.forEach((accordion) =>{
+  accordion.addEventListener('click', ()=>{
+    accordion.classList.toggle('active');
+  })
 })
+

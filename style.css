@@ -1030,6 +1030,76 @@ footer .credit span {
   max-width: fit-content;
 }
 
+.faq .accordion-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.faq .accordion-container .accordion {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  border: 0.1rem solid #a70000;
+}
+
+.faq .accordion-container .accordion.active .accordion-heading {
+  background-color: #a70000;
+}
+
+.faq .accordion-container .accordion.active .accordion-content {
+  display: block;
+}
+
+.faq .accordion-container .accordion.active h3 {
+  color: #fff;
+}
+
+.faq .accordion-container .accordion.active i {
+  color: #fff;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.faq .accordion-container .accordion-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.faq .accordion-container .accordion-heading h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #444;
+}
+
+.faq .accordion-container .accordion-heading i {
+  font-size: 3rem;
+  color: #a70000;
+}
+
+.faq .accordion-content {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  line-height: 2;
+  color: #777;
+  border-top: 0.1rem solid #a70000;
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   .header {
     padding: 0.9rem 5%;
