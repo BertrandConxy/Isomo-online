@@ -7,7 +7,7 @@ An E-learning platform which provide courses in various categories to people esp
 ## Built With
 
 - HTML
-- CSS and SAss
+- CSS and Sass
 - Javascript
 
 ## How to use and run this project
@@ -16,18 +16,18 @@ An E-learning platform which provide courses in various categories to people esp
 
 -Clone this repository with
 
-git clone https://github.com/BertrandConxy/umuhanzi-concert-website.git using your terminal or command line.
+git clone https://github.com/BertrandConxy/isomo-online.git using your terminal or command line.
 
 -Change to the project directory by entering :
 
-cd umuhanzi-concert-website in the terminal.
+cd isomo-online in the terminal.
 
 -run code . to open it in vscode
 
 
 It is a website and It can be opened in any browser.
 
-It is a mobile-first layout which is also responsive to different screens including desktops and laptops.
+It is a desktop-first layout which is also fully-responsive.
 
 I have put a live demo link below in the following section so that
 if anyone is interested can view it. However, if anyone would like to use it, simply, they can fork the repository and then use it independently.
@@ -38,8 +38,11 @@ This project is done and deployed.
 
 ## Screenshoot
 
+![Screenshot (38)](https://user-images.githubusercontent.com/90222110/156747048-d83a9a6f-dd32-4f94-a2dd-789e25215513.png)
+
+
 ## Live Demo link
- https://bertrandconxy.github.io/umuhanzi-concert-website/
+ [isomonline website](https://isomonline.netlify.app/)
 
 ## Issues
 
