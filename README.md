@@ -18,37 +18,27 @@
 - HTML
 - CSS and Sass
 - Javascript
+## Getting Started
 
-## How to use and run this project
+To get a local copy up and running follow these simple example steps.
 
->To get a local copy up and running follow these simple example steps.
+### Prerequisites
+ - A text editor(preferably Visual Studio Code)
 
--Clone this repository with
+### Install
+  -  [Git](https://git-scm.com/downloads)
+  -  [Node](https://nodejs.org/en/download/)
 
-git clone https://github.com/BertrandConxy/isomo-online.git using your terminal or command line.
+### Usage
+#### Clone this repository
 
--Change to the project directory by entering :
-
-cd isomo-online in the terminal.
-
--run code . to open it in vscode
-
-
-It is a website and It can be opened in any browser.
-
-It is a desktop-first layout which is also fully-responsive.
-
-I have put a live demo link below in the following section so that
-if anyone is interested can view it. However, if anyone would like to use it, simply, they can fork the repository and then use it independently.
-There are no other dependencies or installations required.
+```bash
+$ git@github.com:BertrandConxy.Isomo-online.git
+$ cd Isomo-online
+```
 
 ## Project Status
 This project is done and deployed.
-
-
-
-
-
 
 ## Issues
 
