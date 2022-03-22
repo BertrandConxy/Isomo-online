@@ -1,8 +1,17 @@
 
-![](https://img.shields.io/badge/Microverse-blueviolet)
+![](https://img.shields.io/badge/Isomo-blueviolet)
 
 # Isomo-online
-An E-learning platform which provide courses in various categories to people especially those who want to add a new skill in their portfolio and the students who want to prepare for national examinations but don't need to go back to school. It is built with HTML,CSS and JavaScript.
+> An E-learning platform which provide courses in various categories to people especially those who want to add a new skill in their portfolio and the students who want to prepare for national examinations but don't need to go back to school. It is built with HTML,CSS and JavaScript.
+
+# Screenshoot
+
+![Screenshot (38)](https://user-images.githubusercontent.com/90222110/156747048-d83a9a6f-dd32-4f94-a2dd-789e25215513.png)
+
+## Live Demo link
+ [isomonline website](https://isomonline.netlify.app/)
+ 
+ Additional description about the project and its features.
 
 ## Built With
 
@@ -36,13 +45,10 @@ There are no other dependencies or installations required.
 ## Project Status
 This project is done and deployed.
 
-## Screenshoot
-
-![Screenshot (38)](https://user-images.githubusercontent.com/90222110/156747048-d83a9a6f-dd32-4f94-a2dd-789e25215513.png)
 
 
-## Live Demo link
- [isomonline website](https://isomonline.netlify.app/)
+
+
 
 ## Issues
 
